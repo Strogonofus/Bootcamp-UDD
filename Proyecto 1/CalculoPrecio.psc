@@ -13,20 +13,20 @@ Algoritmo CalculoPrecio
 	// Cliente ingresa precio del producto
 	Escribir 'Ingrese precio del producto: '
 	Leer precio
-	// Cliente ingresa cup髇 de descuento
-	Escribir 'Ingrese cup髇 de descuento, si no tiene ingrese 0, ingresar en formato decimal, ejemplo: 0.1 para 10%, 0.2 para 20%, etc...: '
+	// Cliente ingresa cup贸n de descuento
+	Escribir 'Ingrese cup贸n de descuento, si no tiene ingrese 0, ingresar en formato decimal, ejemplo: 0.1 para 10%, 0.2 para 20%, etc...: '
 	Leer descuento
-	//Creamos una nueva variable para entrar informaci髇 al usuario al final
+	//Creamos una nueva variable para entregar informaci贸n al usuario al final
 	descuento_string <- descuento * 100
 	//Cliente ingresa impuestos de su producto
 	Escribir 'Ingrese impuesto a pagar, IVA u otros, ingrese en formato decimal, ejemplo: 0.1 para 10%, 0.2 para 20%, etc...: '
 	Leer impuesto
-	//Creamos una nueva variable para entrar informaci髇 al usuario al final
+	//Creamos una nueva variable para entrar informaci贸n al usuario al final
 	impuesto_string <- impuesto * 100
 	//Cliente ingresa cantidad a comprar
 	Escribir 'Ingrese cantidad a comprar'
 	Leer cantidad
-	//Se calcula descuento seg鷑 cantidad y se crea la variable descuento_cantidad seg鷑 la cantidad que el cliente lleve
+	//Se calcula descuento seg煤n cantidad y se crea la variable descuento_cantidad seg煤n la cantidad que el cliente lleve
 	Si cantidad < CANTIDAD_DESCUENTO1 Entonces
 		descuento_cantidad = 0
 	SiNo		
@@ -46,36 +46,36 @@ Algoritmo CalculoPrecio
 			FinSi
 		FinSi
 	FinSi
-	//Creamos una nueva variable para entrar informaci髇 al usuario al final
+	//Creamos una nueva variable para entrar informaci贸n al usuario al final
 	descuento_cantidad_string <- descuento_cantidad * 100
-	//Pedimos peso del articulo para definir su costo de env韔
+	//Pedimos peso del articulo para definir su costo de env铆o
 	Escribir  'Ingrese el peso de su producto(solo el numero, entero en caso de ser kg (ejemplo 1 para 1kg o 1.5 para 1.5kg), en caso de ser gramos ingresar en formato decimal ( ejemplo : 0.1 para 100 gramos): '
 	Leer peso
-	//Pedimos direcci髇 para env韔 y calculo de costos
+	//Pedimos direcci贸n para env铆o y calculo de costos
 	Escribir 'Ingrese su destino: '
 	Leer destino
 	//Realizamos los calculos para precios finales del producto
-	//Precio aplicando descuento de cup髇
+	//Precio aplicando descuento de cup贸n
 	precio_cupon <- precio * ( 1 - descuento)
-	//Precio aplicando impuestos y cup髇
+	//Precio aplicando impuestos y cup贸n
 	precio_impuestos <- precio_cupon * (1 + impuesto)
-	//Precio aplicando impuesto, cup髇 y descuentos por cantidad
+	//Precio aplicando impuesto, cup贸n y descuentos por cantidad
 	precio_cantidad <- precio_impuestos	* (1 - descuento_cantidad)
-	//Calculo de costo de env韔 total
+	//Calculo de costo de env铆o total
 	costo_envio <- 10 + (peso * 3)
 	//Calculo de precio final con todo aplicado
 	precio_final <- precio_cantidad + costo_envio
-	//Entregamos la informaci髇 al cliente
+	//Entregamos la informaci贸n al cliente
 	Escribir '                  '
 	Escribir 'El precio inicial de su producto: ', precio
-	Escribir 'Su cup髇 de descuento es de: ',descuento_string, '%'
+	Escribir 'Su cup贸n de descuento es de: ',descuento_string, '%'
 	Escribir 'Sus impuestos son de: ', impuesto_string, '%'
 	Escribir 'Su cantidad a comprar es de: ', cantidad, ' unidades'
 	Escribir 'Su descuento por cantidad a recibir es de: ', descuento_cantidad_string, '%'
-	Escribir 'El precio de su producto sin env韔 incluido es de: ', precio_cantidad
+	Escribir 'El precio de su producto sin env铆o incluido es de: ', precio_cantidad
 	Escribir 'El peso de su producto es de: ', peso, 'KG'
-	Escribir 'Su direcci髇 de env韔 es: ', destino
-	Escribir 'Su costo de env韔 ser韆 de: $', costo_envio
-	Escribir 'El precio total a pagar con env韔 incluido es de: $', precio_final
+	Escribir 'Su direcci贸n de env铆o es: ', destino
+	Escribir 'Su costo de env铆o ser铆a de: $', costo_envio
+	Escribir 'El precio total a pagar con env铆o incluido es de: $', precio_final
 	
 FinAlgoritmo

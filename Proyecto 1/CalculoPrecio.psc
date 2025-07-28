@@ -21,7 +21,7 @@ Algoritmo CalculoPrecio
 	//Cliente ingresa impuestos de su producto
 	Escribir 'Ingrese impuesto a pagar, IVA u otros, ingrese en formato decimal, ejemplo: 0.1 para 10%, 0.2 para 20%, etc...: '
 	Leer impuesto
-	//Creamos una nueva variable para entrar información al usuario al final
+	//Creamos una nueva variable para entregar información al usuario al final
 	impuesto_string <- impuesto * 100
 	//Cliente ingresa cantidad a comprar
 	Escribir 'Ingrese cantidad a comprar'
@@ -46,7 +46,7 @@ Algoritmo CalculoPrecio
 			FinSi
 		FinSi
 	FinSi
-	//Creamos una nueva variable para entrar información al usuario al final
+	//Creamos una nueva variable para entregar información al usuario al final
 	descuento_cantidad_string <- descuento_cantidad * 100
 	//Pedimos peso del articulo para definir su costo de envío
 	Escribir  'Ingrese el peso de su producto(solo el numero, entero en caso de ser kg (ejemplo 1 para 1kg o 1.5 para 1.5kg), en caso de ser gramos ingresar en formato decimal ( ejemplo : 0.1 para 100 gramos): '

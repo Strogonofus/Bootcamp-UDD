@@ -1,0 +1,7 @@
+POO: Se usa programación JS orientada a objetos, es decir se usa el código 'class', esto permite la creación de encuestas a través de una constante, la encuesta será un 'child' que llevará los datos indicados en el padre, lo que facilita la creación de nuevas preguntas.
+Se realiza el sistema de conteo de votos con un array donde se le añade un '0' al array y luego se cuenta la longitud de este, de esta manera se permite el conteo de votos. Se utilizan funciones dentro de las clases para poder realizar el prompt de la pregunta y 
+para mostrar los resultados de la encuesta en la consola.
+
+
+PF: Se realiza el sistema de encuestas en JS con programación funcional, el conteo de votos se realiza de la misma forma que en la POO, pero no se crean clases y se utilizan constantes para crear las encuestas directamente, se usa una función tambíen para el prompt y 
+para mostrar los resultados en la consola-

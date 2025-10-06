@@ -1,0 +1,53 @@
+body { padding-top: 70px;
+background-color: #e6f7ff;}
+.bg-celeste {
+  background-color: #E6F7FF
+}
+/* Cambiar color y grosor de todas las divisiones horizontales */
+.border-top,
+.border-bottom {
+  border-color: #E6F7FF !important;  
+  border-width: 2px;                 
+}
+:root { --nav-h: 72px; }
+#main, #productos, #cotizar { 
+  scroll-margin-top: calc(var(--nav-h) + 8px);
+}
+html { scroll-behavior: smooth; }
+
+footer.section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+#quoteForm .form-control {
+  padding: 0.9rem 1rem;      
+  font-size: 1rem;
+}
+
+#quoteForm .btn {
+  padding: 0.9rem 1.25rem;   
+  font-size: 1rem;
+}
+
+
+#quoteForm {
+  margin-bottom: 1rem;
+}
+
+
+#quoteMsg {
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+}
+
+
+@media (max-width: 768px) {
+  #quoteForm .col-md-5,
+  #quoteForm .col-md-2 {
+    width: 100%;
+  }
+  #quoteForm .btn {
+    width: 100%;
+  }
+}

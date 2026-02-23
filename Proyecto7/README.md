@@ -1,0 +1,3 @@
+# 🍕 Moisizza – Fullstack E-commerce
+
+Moisizza es una aplicación fullstack de e-commerce desarrollada con React (Vite) en el frontend y Node.js + Express en el backend, utilizando MongoDB Atlas como base de datos y Stripe para pagos en línea. La plataforma permite registro y autenticación con JWT, gestión de productos, carrito de compras protegido, checkout seguro con Stripe y control de roles (admin/usuario).

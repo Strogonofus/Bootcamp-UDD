@@ -1,0 +1,3 @@
+# Proyecto 6 - Backend con Autenticación JWT
+
+Aplicación backend desarrollada con Node.js, Express y MongoDB que implementa autenticación y autorización mediante JSON Web Tokens (JWT). El sistema permite el registro e inicio de sesión de usuarios, validación de sesión mediante middleware de protección de rutas, y la gestión completa (CRUD) de productos asociados a cada usuario. Se utilizó Mongoose como ORM para la interacción con MongoDB Atlas, dotenv para la gestión de variables de entorno y una arquitectura organizada en controladores, modelos y rutas siguiendo buenas prácticas de desarrollo backend.

@@ -1,0 +1,9 @@
+Este proyecto consiste en una API REST desarrollada con Node.js y Express para gestionar reservas hoteleras. La aplicación permite crear, visualizar, obtener, actualizar y eliminar reservas, además de realizar búsquedas mediante distintos filtros. Las reservas se almacenan en una estructura de datos en memoria (array), ubicada en el archivo data/reservas.db.js.
+
+Para ejecutar el proyecto se deben instalar las dependencias con npm install, crear un archivo .env en la raíz con la variable PORT=3000, y luego iniciar el servidor con npm run dev o npm start. El servidor quedará disponible en http://localhost:3000.
+
+Las pruebas pueden realizarse con Postman enviando solicitudes a http://localhost:3000/api/reservas. Para crear una reserva se utiliza el método POST y en la pestaña Body se debe seleccionar la opción “raw” y formato JSON. El cuerpo debe incluir los campos necesarios como hotel, tipo_habitacion, num_huespedes, fecha_inicio y fecha_fin. Al enviarse correctamente, la API responde con un estado 201 y devuelve la reserva creada con un identificador único.
+
+Para obtener todas las reservas se utiliza el método GET en la misma ruta. Para consultar una reserva específica se utiliza GET agregando el identificador en la URL. Para actualizar una reserva se utiliza PUT indicando el identificador y enviando en el body los campos a modificar en formato JSON. Para eliminar una reserva se utiliza DELETE indicando el identificador correspondiente.
+
+La API también permite realizar búsquedas utilizando parámetros query en el método GET, por ejemplo filtrando por hotel, rango de fechas, tipo de habitación, estado o número de huéspedes. Estos filtros se envían en la URL como parámetros adicionales y permiten obtener resultados específicos según los criterios indicados.

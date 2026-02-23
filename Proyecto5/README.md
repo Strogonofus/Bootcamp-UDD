@@ -1,0 +1,3 @@
+# Weather App 🌤
+
+Esta aplicación web fue desarrollada con React y Vite, y permite consultar el clima actual de cualquier ciudad del mundo utilizando la API pública Open-Meteo. El usuario puede ingresar el nombre de una ciudad en el buscador y visualizar información como temperatura y velocidad del viento en una interfaz moderna diseñada con TailwindCSS. La aplicación demuestra el consumo de APIs externas, manejo de estado con Hooks y renderizado dinámico de componentes en React.

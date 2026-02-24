@@ -7,10 +7,12 @@ import { setupSwagger } from "./docs/swagger.js";
 
 const app = express();
 
-// Stripe webhook (opcional) requiere raw body SOLO en esa ruta
-// app.use("/api/payments/webhook", express.raw({ type: "application/json" }));
+const allowedOrigins = [
+  ENV.CLIENT_URL,
+  "http://localhost:5173",
+];
 
-app.use(cors({ origin: ENV.CLIENT_URL, credentials: true }));
+app.use(cors());
 app.use(express.json());
 
 setupSwagger(app);
